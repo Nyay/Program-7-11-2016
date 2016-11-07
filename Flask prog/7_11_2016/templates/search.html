@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск по слову</title>
+
+</head>
+<body>
+<form>
+    Something:<input type="text" name="wordform">
+    <input type="submit" value="Submit">
+    {% for form, contecst in d.items() %}
+    <li>{{ contecst }}</li>
+    {% endfor %}
+</form>
+</body>
+</html>
